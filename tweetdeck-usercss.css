@@ -1,35 +1,72 @@
+:root {
+  --dark-bg-color: #14171a;
+  --shelf-width: 500px;
+  --app-margin: 8px;
+  --app-border-color: #444;
+  --app-border-radius: 12px;
+  --app-border-width: 1px;
+  --button-radius: 50%;
+  --main-font-color: #98a9b6;
+  --main-font-face: 'Helvetica Neue';
+  --main-font-weight: 200;
+  --button-border-radius: 6px;
+  --media-inline-height: 280px;
+  --avatar-size: 64px;
+  /* set to 100% for round avatars */
+  --avatar-radius: 15%;
+  --tweet-padding: 10px;
+}
+
 html.dark body {
-  background-color: #14171a;
+  background-color: var(--dark-bg-color);
+}
+
+html.dark .compose {
+  border-radius: var(--app-border-radius) var(--app-border-radius) var(--app-border-radius) 0;
+  transition: width 0.1s ease;
+  width: 0;
+}
+
+html.dark .is-open .compose {
+  width: var(--shelf-width);
 }
 
 html.dark .application,
 html.dark .column-panel {
-  background-color: #14171A;
+  background-color: var(--dark-bg-color);
 }
 
 html.dark .drawer {
-  left: -500px;
-  width: 500px;
+  left: calc(var(--shelf-width) * -1);
+  width: var(--shelf-width);
 }
 
 html.dark .app-content.is-open {
-  transform: translateX(500px) !important;
-  margin-right: 500px !important;
+  transform: translateX(var(--shelf-width)) !important;
+  margin-right: var(--shelf-width) !important;
 }
 
 html.dark .app-content {
-  margin: 8px 0;
+  margin: var(--app-margin) 0;
 }
 
 html.dark .app-header {
-  margin: 8px 0;
-  border: 1px #444 solid;
-  border-radius: 12px;
+  margin: var(--app-margin) 0;
+  border-color: var(--app-border-color);
+  border-style: solid;
+  border-width: var(--app-border-width);
+  border-radius: var(--app-border-radius);
+}
+
+html.dark .app-header.is-condensed .app-header-inner {
+  background-color: transparent;
 }
 
 html.dark .column {
-  border: 1px #444 solid;
-  border-radius: 12px;
+  border-color: var(--app-border-color);
+  border-style: solid;
+  border-width: var(--app-border-width);
+  border-radius: var(--app-border-radius);
 }
 
 /*
@@ -97,54 +134,48 @@ html.dark .column-header {
 }
 
 html.dark {
-  color: #98a9b6;
-  font-family: 'Helvetica Neue';
-  font-weight: 200;
+  color: var(--main-font-color);
+  font-family: var(--main-font-face);
+  font-weight: var(--main-font-weight);
 }
 
 html.dark button {
-  border-radius: 6px;
+  border-radius: var(--button-border-radius);
 }
 
 html.dark .media-size-medium {
-  height: 280px;
+  height: var(--media-inline-height);
 }
 
 html.dark .avatar {
-  height: 64px;
-  width: 64px;
-  /* set to 100% for round avatars */
-  border-radius: 15%;
+  height: var(--avatar-size);
+  width: var(--avatar-size);
+  border-radius: var(--avatar-radius);
 }
 
 html.dark .item-img {
-  width: 64px;
+  width: var(--avatar-size);
 }
 
 html.dark .tweet {
-  padding-left: 74px;
+  padding-left: calc(var(--avatar-size) + var(--tweet-padding));
 }
 
 html.dark .tweet-img {
-  margin-left: -74px;
+  margin-left: calc((var(--avatar-size) + var(--tweet-padding)) * -1);;
 }
 
 html.dark .tweet-button {
-  border-radius: 35%;
+  border-radius: var(--button-radius);
   margin-left: 1.25px;
 }
 
 html.dark .app-search-fake {
-  border-radius: 35%;
+  border-radius: var(--button-radius);
 }
 
 .app-search-fake .icon {
   line-height: 18px;
-}
-
-html.dark .avatar.size24 {
-  width: 32px;
-  height: 32px;
 }
 
 html.dark .tweet-button {
