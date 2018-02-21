@@ -6,14 +6,14 @@
   --app-border-color: #444;
   --app-border-radius: 12px;
   --app-border-width: 1px;
-  --button-radius: 50%;
+  --sidebar-button-radius: 50%;
   --main-font-color: #98a9b6;
   --main-font-face: 'Helvetica Neue';
   --main-font-weight: 200;
   --button-border-radius: 6px;
   --media-inline-height: 280px;
   --avatar-size: 64px;
-  /* set to 100% for round avatars */
+  /* set to 50% for round avatars */
   --avatar-radius: 15%;
   --tweet-padding: 10px;
 }
@@ -167,12 +167,12 @@ html.dark .tweet-img {
 }
 
 html.dark .tweet-button {
-  border-radius: var(--button-radius);
+  border-radius: var(--sidebar-button-radius);
   margin-left: 1.25px;
 }
 
 html.dark .app-search-fake {
-  border-radius: var(--button-radius);
+  border-radius: var(--sidebar-button-radius);
 }
 
 .app-search-fake .icon {
