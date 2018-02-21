@@ -1,0 +1,160 @@
+html.dark body {
+  background-color: #14171a;
+}
+
+html.dark .application,
+html.dark .column-panel {
+  background-color: #14171A;
+}
+
+html.dark .drawer {
+  left: -500px;
+  width: 500px;
+}
+
+html.dark .app-content.is-open {
+  transform: translateX(500px) !important;
+  margin-right: 500px !important;
+}
+
+html.dark .app-content {
+  margin: 8px 0;
+}
+
+html.dark .app-header {
+  margin: 8px 0;
+  border: 1px #444 solid;
+  border-radius: 12px;
+}
+
+html.dark .column {
+  border: 1px #444 solid;
+  border-radius: 12px;
+}
+
+/*
+  Default col width to 25%
+*/
+section.column {
+  width: calc(25% - 5.25px);
+}
+
+/*
+  Allow horizontal scrolling for over 8 cols
+*/
+html.dark .app-columns {
+  overflow-x: scroll;
+  width: 100%;
+}
+
+/*
+  Dynamic Column Sizing
+  Number = columns + 1
+  Currently supports 8 cols
+*/
+section.column:first-child:nth-last-child(2),
+section.column:first-child:nth-last-child(2) ~ section.column {
+  width: calc(100% - 21px);
+}
+
+section.column:first-child:nth-last-child(3),
+section.column:first-child:nth-last-child(3) ~ section.column {
+  width: calc(50% - 10.5px);
+}
+
+section.column:first-child:nth-last-child(4),
+section.column:first-child:nth-last-child(4) ~ section.column {
+  width: calc(33.3333% - 7px);
+}
+
+section.column:first-child:nth-last-child(5),
+section.column:first-child:nth-last-child(5) ~ section.column {
+  width: calc(25% - 5.25px);
+}
+
+section.column:first-child:nth-last-child(6),
+section.column:first-child:nth-last-child(6) ~ section.column {
+  width: calc(20% - 4.2px);
+}
+
+section.column:first-child:nth-last-child(7),
+section.column:first-child:nth-last-child(7) ~ section.column {
+  width: calc(16.6667% - 3.5px);
+}
+
+section.column:first-child:nth-last-child(8),
+section.column:first-child:nth-last-child(8) ~ section.column {
+  width: calc(14.2857% - 3px);
+}
+
+section.column:first-child:nth-last-child(9),
+section.column:first-child:nth-last-child(9) ~ section.column {
+  width: calc(12.5% - 2.625px);
+}
+
+html.dark .column-header {
+  text-align: center;
+}
+
+html.dark {
+  color: #98a9b6;
+  font-family: 'Helvetica Neue';
+  font-weight: 200;
+}
+
+html.dark button {
+  border-radius: 6px;
+}
+
+html.dark .media-size-medium {
+  height: 280px;
+}
+
+html.dark .avatar {
+  height: 64px;
+  width: 64px;
+  /* set to 100% for round avatars */
+  border-radius: 15%;
+}
+
+html.dark .item-img {
+  width: 64px;
+}
+
+html.dark .tweet {
+  padding-left: 74px;
+}
+
+html.dark .tweet-img {
+  margin-left: -74px;
+}
+
+html.dark .tweet-button {
+  border-radius: 35%;
+  margin-left: 1.25px;
+}
+
+html.dark .app-search-fake {
+  border-radius: 35%;
+}
+
+.app-search-fake .icon {
+  line-height: 18px;
+}
+
+html.dark .avatar.size24 {
+  width: 32px;
+  height: 32px;
+}
+
+html.dark .tweet-button {
+  width: 40px;
+}
+
+.btn-compose span {
+  display: none;
+}
+
+html.dark .is-open .drawer::after {
+  box-shadow: none;
+}
