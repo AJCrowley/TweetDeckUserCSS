@@ -1,6 +1,8 @@
 /* customize these values to tweak your experience */
 :root {
   --dark-bg-color: #14171a;
+  --light-fg-color: #da6822; /* def #1da1f2*/
+  --hue-rotation: 170deg; /* you'll hvae to experiment to find the right hue rotation for your fg color. Only changes color of verified checkmark. Set to 0 to turn off */
   --shelf-width: 500px;
   --app-margin: 8px;
   --app-border-color: #444;
@@ -14,7 +16,7 @@
   --media-inline-height: 280px;
   --avatar-size: 64px;
   /* set to 50% for round avatars */
-  --avatar-radius: 15%;
+  --avatar-radius: 10%;
   --tweet-padding: 10px;
 }
 
@@ -166,6 +168,11 @@ html.dark .tweet-img {
   margin-left: calc((var(--avatar-size) + var(--tweet-padding)) * -1);;
 }
 
+html.dark Button.Button--primary {
+  background-color: var(--light-fg-color) !important;
+  border-color: var(--light-fg-color) !important;
+}
+
 html.dark .tweet-button {
   border-radius: var(--sidebar-button-radius);
   margin-left: 1.25px;
@@ -173,10 +180,43 @@ html.dark .tweet-button {
 
 html.dark .app-search-fake {
   border-radius: var(--sidebar-button-radius);
+  border-color: var(--light-fg-color);
 }
 
 .app-search-fake .icon {
+  color: var(--light-fg-color);
   line-height: 18px;
+}
+
+html.dark .column-nav-updates,
+html.dark .app-nav-tab,
+html.dark .app-nav-link,
+html.btd-on .btd-settings-btn .icon,
+html.dark .is-new .column-type-icon,
+html.dark .column-title-back,
+html.dark .other-replies-link,
+html.dark .other-replies-link:hover,
+html.dark a,
+html.dark .is-inverted-dark a,
+html.dark .is-inverted-dark a:hover,
+html.dark .is-inverted-dark a:focus,
+html.dark .is-inverted-dark a:active
+{
+  color: var(--light-fg-color);
+}
+
+html.dark .Button, html.dark button {
+  border-color: var(--light-fg-color);
+  color: var(--light-fg-color);
+}
+
+html.dark .more-tweets-glow {
+  background: radial-gradient(ellipse farthest-corner at 50% 100%, var(--light-fg-color) 0%, var(--light-fg-color) 25%, rgba(255,255,255,0) 75%);
+}
+
+html.dark .sprite-verified-mini,
+html.dark .sprite-verified {
+  filter: hue-rotate(var(--hue-rotation));
 }
 
 html.dark .tweet-button {
