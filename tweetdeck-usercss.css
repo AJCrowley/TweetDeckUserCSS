@@ -2,7 +2,7 @@
 :root {
   --dark-bg-color: #14171a;
   --light-fg-color: #da6822; /* def #1da1f2*/
-  --hue-rotation: 170deg; /* you'll hvae to experiment to find the right hue rotation for your fg color. Only changes color of verified checkmark. Set to 0 to turn off */
+  --hue-rotation: 170deg; /* def 0 // you'll have to experiment to find the right hue rotation for your fg color. Changes color of verified checkmark and Tweet button's spinner animation */
   --shelf-width: 500px;
   --app-margin: 8px;
   --app-border-color: #444;
@@ -205,6 +205,10 @@ html.dark .is-inverted-dark a:active
   color: var(--light-fg-color);
 }
 
+html.dark .stroke-twitter-blue {
+  stroke: var(--light-fg-color);
+}
+
 html.dark .Button, html.dark button {
   border-color: var(--light-fg-color);
   color: var(--light-fg-color);
@@ -215,7 +219,8 @@ html.dark .more-tweets-glow {
 }
 
 html.dark .sprite-verified-mini,
-html.dark .sprite-verified {
+html.dark .sprite-verified,
+html.dark .spinner-button-icon-spinner {
   filter: hue-rotate(var(--hue-rotation));
 }
 
