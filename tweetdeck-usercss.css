@@ -1,12 +1,13 @@
 /* customize these values to tweak your experience */
 :root {
   --dark-bg-color: #14171a;
-  --light-fg-color: #e56800; /* def #1da1f2 */
+  --light-fg-color: #ff7400; /* def #1da1f2 */
   /* colour transform vars
   you'll have to experiment to find the right values your fg color. I recommend setting these first, then sampling the colour for your light-fg-color value */
   --color-hue-rotation: 175deg;
-  --color-brightness: 90%;
+  --color-brightness: 100%;
   --color-saturation: 200%;
+  --color-contrast: 100%;
   --shelf-width: 500px;
   --app-margin: 8px;
   --app-border-color: #444;
@@ -228,7 +229,7 @@ html.dark .sprite-verified,
 html.dark .spinner-button-icon-spinner,
 html.dark .sprite,
 html.dark Button.Button--primary {
-  filter: hue-rotate(var(--color-hue-rotation)) saturate(var(--color-saturation)) brightness(var(--color-brightness));
+  filter: hue-rotate(var(--color-hue-rotation)) saturate(var(--color-saturation)) brightness(var(--color-brightness)) contrast(var(--color-contrast));
 }
 
 html.dark .tweet-button {
