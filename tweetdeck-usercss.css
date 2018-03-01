@@ -1,8 +1,8 @@
 /* customize these values to tweak your experience */
 :root {
   --dark-bg-color: #14171a;
-  --light-fg-color: #da6822; /* def #1da1f2*/
-  --hue-rotation: 170deg; /* def 0 // you'll have to experiment to find the right hue rotation for your fg color. Changes color of verified checkmark and Tweet button's spinner animation */
+  --light-fg-color: #da6822; /* def #1da1f2 */
+  --hue-rotation: 165deg; /* def 0 // you'll have to experiment to find the right hue rotation for your fg color. Changes color of verified checkmark and Tweet button's spinner animation */
   --shelf-width: 500px;
   --app-margin: 8px;
   --app-border-color: #444;
@@ -200,7 +200,8 @@ html.dark a,
 html.dark .is-inverted-dark a,
 html.dark .is-inverted-dark a:hover,
 html.dark .is-inverted-dark a:focus,
-html.dark .is-inverted-dark a:active
+html.dark .is-inverted-dark a:active,
+html.dark .color-twitter-blue
 {
   color: var(--light-fg-color);
 }
@@ -220,7 +221,8 @@ html.dark .more-tweets-glow {
 
 html.dark .sprite-verified-mini,
 html.dark .sprite-verified,
-html.dark .spinner-button-icon-spinner {
+html.dark .spinner-button-icon-spinner,
+html.dark .sprite {
   filter: hue-rotate(var(--hue-rotation));
 }
 
