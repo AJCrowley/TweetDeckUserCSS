@@ -168,10 +168,10 @@ html.dark .tweet-img {
   margin-left: calc((var(--avatar-size) + var(--tweet-padding)) * -1);;
 }
 
-html.dark Button.Button--primary {
+/*html.dark Button.Button--primary {
   background-color: var(--light-fg-color) !important;
   border-color: var(--light-fg-color) !important;
-}
+}*/
 
 html.dark .tweet-button {
   border-radius: var(--sidebar-button-radius);
@@ -222,7 +222,8 @@ html.dark .more-tweets-glow {
 html.dark .sprite-verified-mini,
 html.dark .sprite-verified,
 html.dark .spinner-button-icon-spinner,
-html.dark .sprite {
+html.dark .sprite,
+html.dark Button.Button--primary {
   filter: hue-rotate(var(--hue-rotation));
 }
 
