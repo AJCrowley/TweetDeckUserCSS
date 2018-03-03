@@ -104,37 +104,37 @@ section.column:first-child:nth-last-child(2) ~ section.column {
 
 section.column:first-child:nth-last-child(3),
 section.column:first-child:nth-last-child(3) ~ section.column {
-  width: calc(50% - 10.5px);
+  width: calc((100% / 2) - 10.5px);
 }
 
 section.column:first-child:nth-last-child(4),
 section.column:first-child:nth-last-child(4) ~ section.column {
-  width: calc(33.3333% - 7px);
+  width: calc((100% / 3) - 7px);
 }
 
 section.column:first-child:nth-last-child(5),
 section.column:first-child:nth-last-child(5) ~ section.column {
-  width: calc(25% - 5.25px);
+  width: calc((100% / 4) - 5.25px);
 }
 
 section.column:first-child:nth-last-child(6),
 section.column:first-child:nth-last-child(6) ~ section.column {
-  width: calc(20% - 4.2px);
+  width: calc((100% / 5) - 4.2px);
 }
 
 section.column:first-child:nth-last-child(7),
 section.column:first-child:nth-last-child(7) ~ section.column {
-  width: calc(16.6667% - 3.5px);
+  width: calc((100% / 6) - 3.5px);
 }
 
 section.column:first-child:nth-last-child(8),
 section.column:first-child:nth-last-child(8) ~ section.column {
-  width: calc(14.2857% - 3px);
+  width: calc((100% / 7) - 3px);
 }
 
 section.column:first-child:nth-last-child(9),
 section.column:first-child:nth-last-child(9) ~ section.column {
-  width: calc(12.5% - 2.625px);
+  width: calc((100% / 8) - 2.625px);
 }
 
 html.dark .column-header {
