@@ -209,7 +209,8 @@ html.dark .is-inverted-dark a,
 html.dark .is-inverted-dark a:hover,
 html.dark .is-inverted-dark a:focus,
 html.dark .is-inverted-dark a:active,
-html.dark .color-twitter-blue
+html.dark .color-twitter-blue,
+html.dark .is-selected.tweet-detail-action .icon-reply
 {
   color: var(--light-fg-color);
 }
