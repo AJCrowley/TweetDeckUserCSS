@@ -12,6 +12,6 @@ To use, just install a UserCSS browser extension, I use [User CSS for Chrome](ht
 
 Once the extension is installed, navigate to [TweetDeck.com](https://tweetdeck.twitter.com/), press the User CSS icon in your toolbar (or whatever action is appropriate for the browser extension that you installed), and paste the contents of the CSS file into the CSS pane.
 
-Alternatively, if you're using the [BetterTweetDeck](https://github.com/eramdam/BetterTweetDeck) [Chrome Extension](https://chrome.google.com/webstore/detail/bettertweetdeck/micblkellenpbfapmcpcfhcoeohhnpob?hl=en), it has custom CSS baked right into the options. I highly recommend this extension in conjunction with my custom CSS to provide the optimum TweetDeck experience!
+Alternatively, if you're using the [BetterTweetDeck](https://github.com/eramdam/BetterTweetDeck), it has custom CSS baked right into the options. I highly recommend this extension in conjunction with my custom CSS to provide the optimum TweetDeck experience! You can install it from [here](https://chrome.google.com/webstore/detail/bettertweetdeck/micblkellenpbfapmcpcfhcoeohhnpob?hl=en)
 
 Enjoy TweetDeck as it should be!
