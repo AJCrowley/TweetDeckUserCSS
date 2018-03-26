@@ -183,11 +183,6 @@ html.dark .tweet-img {
   margin-left: calc((var(--avatar-size) + var(--tweet-padding)) * -1);;
 }
 
-/*html.dark Button.Button--primary {
-  background-color: var(--light-fg-color) !important;
-  border-color: var(--light-fg-color) !important;
-}*/
-
 html.dark .tweet-button {
   border-radius: var(--sidebar-button-radius);
   margin-left: 1.25px;
@@ -220,9 +215,14 @@ html.dark .is-inverted-dark a:hover,
 html.dark .is-inverted-dark a:focus,
 html.dark .is-inverted-dark a:active,
 html.dark .color-twitter-blue,
-html.dark .is-selected.tweet-detail-action .icon-reply
+html.dark .is-selected.tweet-detail-action .icon-reply,
+html.dark .follow-btn .Icon
 {
   color: var(--light-fg-color);
+}
+
+html.dark .follow-btn button:hover .Icon {
+	color: #1da1f2;
 }
 
 html.dark .stroke-twitter-blue {
