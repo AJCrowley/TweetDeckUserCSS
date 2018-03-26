@@ -25,6 +25,16 @@
   --tweet-padding: 10px;
 }
 
+/* loading screen */
+body {
+  background-color: var(--light-fg-color);
+}
+
+.spinner-centered {
+  filter: hue-rotate(var(--color-hue-rotation)) saturate(var(--color-saturation)) brightness(var(--color-brightness)) contrast(var(--color-contrast));
+}
+/* end loading screen */
+
 html.dark body {
   background-color: var(--dark-bg-color);
 }
@@ -222,6 +232,11 @@ html.dark .stroke-twitter-blue {
 html.dark .Button, html.dark button {
   border-color: var(--light-fg-color);
   color: var(--light-fg-color);
+}
+
+html.dark button:hover {
+  border-color: #1da1f2;
+  filter: hue-rotate(var(--color-hue-rotation)) saturate(var(--color-saturation)) brightness(var(--color-brightness)) contrast(var(--color-contrast));
 }
 
 html.dark .more-tweets-glow {
