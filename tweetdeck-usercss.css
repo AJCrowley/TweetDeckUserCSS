@@ -252,6 +252,13 @@ html.dark Button.Button--primary {
   filter: hue-rotate(var(--color-hue-rotation)) saturate(var(--color-saturation)) brightness(var(--color-brightness)) contrast(var(--color-contrast));
 }
 
+.js-action-unfollow {
+  background-color: #fff !important;
+  border-color: var(--light-fg-color) !important;
+  color: var(--light-fg-color) !important;
+  filter: none !important;
+}
+
 html.dark .tweet-button {
   width: 40px;
 }
