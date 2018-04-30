@@ -1,7 +1,9 @@
 /* customize these values to tweak your experience */
+
 :root {
   --dark-bg-color: #14171a;
-  --light-fg-color: #ff7400; /* def #1da1f2 */
+  --light-fg-color: #ff7400;
+  /* def #1da1f2 */
   /* colour transform vars
   you'll have to experiment to find the right values your fg color. I recommend setting these first, then sampling the colour for your light-fg-color value */
   --color-hue-rotation: 175deg;
@@ -26,6 +28,7 @@
 }
 
 /* loading screen */
+
 body {
   background-color: var(--light-fg-color);
 }
@@ -33,6 +36,7 @@ body {
 .spinner-centered {
   filter: hue-rotate(var(--color-hue-rotation)) saturate(var(--color-saturation)) brightness(var(--color-brightness)) contrast(var(--color-contrast));
 }
+
 /* end loading screen */
 
 html.dark body {
@@ -90,6 +94,7 @@ html.dark .column {
 /*
   Default col width to 25%
 */
+
 section.column {
   width: calc(25% - 5.25px);
 }
@@ -97,6 +102,7 @@ section.column {
 /*
   Allow horizontal scrolling for over 8 cols
 */
+
 html.dark .app-columns {
   overflow-x: scroll;
   width: 100%;
@@ -107,44 +113,45 @@ html.dark .app-columns {
   Number = columns + 1
   Currently supports 8 cols
 */
+
 section.column:first-child:nth-last-child(2),
-section.column:first-child:nth-last-child(2) ~ section.column {
-  width: calc(100% - 21px);
+section.column:first-child:nth-last-child(2)~section.column {
+  width: calc((100% / 2) - calc(20px / 2));
 }
 
 section.column:first-child:nth-last-child(3),
-section.column:first-child:nth-last-child(3) ~ section.column {
-  width: calc((100% / 2) - 10.5px);
+section.column:first-child:nth-last-child(3)~section.column {
+  width: calc((100% / 3) - calc(20px / 3));
 }
 
 section.column:first-child:nth-last-child(4),
-section.column:first-child:nth-last-child(4) ~ section.column {
-  width: calc((100% / 3) - 7px);
+section.column:first-child:nth-last-child(4)~section.column {
+  width: calc((100% / 4) - calc(20px / 4));
 }
 
 section.column:first-child:nth-last-child(5),
-section.column:first-child:nth-last-child(5) ~ section.column {
-  width: calc((100% / 4) - 5.25px);
+section.column:first-child:nth-last-child(5)~section.column {
+  width: calc((100% / 5) - calc(20px / 5));
 }
 
 section.column:first-child:nth-last-child(6),
-section.column:first-child:nth-last-child(6) ~ section.column {
-  width: calc((100% / 5) - 4.2px);
+section.column:first-child:nth-last-child(6)~section.column {
+  width: calc((100% / 6) - calc(20px / 6));
 }
 
 section.column:first-child:nth-last-child(7),
-section.column:first-child:nth-last-child(7) ~ section.column {
-  width: calc((100% / 6) - 3.5px);
+section.column:first-child:nth-last-child(7)~section.column {
+  width: calc((100% / 7) - calc(20px / 7));
 }
 
 section.column:first-child:nth-last-child(8),
-section.column:first-child:nth-last-child(8) ~ section.column {
-  width: calc((100% / 7) - 3px);
+section.column:first-child:nth-last-child(8)~section.column {
+  width: calc((100% / 8) - calc(20px / 8));
 }
 
 section.column:first-child:nth-last-child(9),
-section.column:first-child:nth-last-child(9) ~ section.column {
-  width: calc((100% / 8) - 2.625px);
+section.column:first-child:nth-last-child(9)~section.column {
+  width: calc((100% / 9) - calc(20px / 9));
 }
 
 html.dark .column-header {
@@ -180,7 +187,8 @@ html.dark .tweet {
 }
 
 html.dark .tweet-img {
-  margin-left: calc((var(--avatar-size) + var(--tweet-padding)) * -1);;
+  margin-left: calc((var(--avatar-size) + var(--tweet-padding)) * -1);
+  ;
 }
 
 html.dark .tweet-button {
@@ -216,20 +224,20 @@ html.dark .is-inverted-dark a:focus,
 html.dark .is-inverted-dark a:active,
 html.dark .color-twitter-blue,
 html.dark .is-selected.tweet-detail-action .icon-reply,
-html.dark .follow-btn .Icon
-{
+html.dark .follow-btn .Icon {
   color: var(--light-fg-color);
 }
 
 html.dark .follow-btn button:hover .Icon {
-	color: #1da1f2;
+  color: #1da1f2;
 }
 
 html.dark .stroke-twitter-blue {
   stroke: var(--light-fg-color);
 }
 
-html.dark .Button, html.dark button {
+html.dark .Button,
+html.dark button {
   border-color: var(--light-fg-color);
   color: var(--light-fg-color);
 }
@@ -240,7 +248,7 @@ html.dark button:hover {
 }
 
 html.dark .more-tweets-glow {
-  background: radial-gradient(ellipse farthest-corner at 50% 100%, var(--light-fg-color) 0%, var(--light-fg-color) 25%, rgba(255,255,255,0) 75%);
+  background: radial-gradient(ellipse farthest-corner at 50% 100%, var(--light-fg-color) 0%, var(--light-fg-color) 25%, rgba(255, 255, 255, 0) 75%);
 }
 
 html.dark .sprite-verified-mini,
