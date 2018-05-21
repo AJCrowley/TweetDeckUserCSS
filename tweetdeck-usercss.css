@@ -246,7 +246,8 @@ html.dark .more-tweets-glow {
 }
 
 html.dark .sprite-verified-mini,
-html.dark .sprite-verified,
+html.dark .sprite-verified::before,
+html.dark .badge-verified,
 html.dark .spinner-button-icon-spinner,
 html.dark .spinner-small,
 html.dark .sprite:not(.tweet-dogear),
