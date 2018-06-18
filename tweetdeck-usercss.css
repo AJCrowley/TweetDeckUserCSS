@@ -149,6 +149,7 @@ section.column:first-child:nth-last-child(9) ~ section.column {
 
 html.dark .column-header {
   text-align: center;
+  overflow: visible;
 }
 
 html.dark {
