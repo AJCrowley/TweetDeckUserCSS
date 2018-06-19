@@ -2,6 +2,8 @@
 :root {
   --dark-bg-color: #14171a;
   --light-fg-color: #ff7400; /* def #1da1f2 */
+  --notification-color: #f00;
+  --notification-border: #c99;
   /* colour transform vars
   you'll have to experiment to find the right values your fg color. I recommend setting these first, then sampling the colour for your light-fg-color value */
   --color-hue-rotation: 175deg;
@@ -26,8 +28,7 @@
 }
 
 /* loading screen */
-body,
-html.dark .bg-color-twitter-blue {
+body {
   background-color: var(--light-fg-color);
 }
 
@@ -271,4 +272,9 @@ html.dark .tweet-button {
 
 html.dark .is-open .drawer::after {
   box-shadow: none;
+}
+
+html.dark .bg-color-twitter-blue {
+  background-color: var(--notification-color);
+  border-color: var(--notification-border);
 }
