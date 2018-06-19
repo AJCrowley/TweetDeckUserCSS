@@ -26,7 +26,8 @@
 }
 
 /* loading screen */
-body {
+body,
+html.dark .bg-color-twitter-blue {
   background-color: var(--light-fg-color);
 }
 
